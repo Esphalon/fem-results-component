@@ -1,8 +1,8 @@
 :root{
   /* Colour Settings */
     --clr-primary-red: hsl(0, 100%, 67%);
-    --clr-primary-orange: hsl(39, 100%, 56%);
-    --clr-primary-orange: hsl(166, 100%, 37%);
+    --clr-primary-orange:hsl(39, 100%, 56%);
+    --clr-primary-teal: hsl(166, 100%, 37%);
     --clr-primary-blue: hsla(234, 85%, 45%);
   
     --clr-neutral-white: hsl(0, 0%, 100%);
@@ -24,12 +24,16 @@
     --fs-body: 1.125rem;
     --fs-large: 1.5rem;
     --fs-extra-large: 2rem;
-    --fs-heading: 3rem;
+    --fs-heading: 3.5rem;
     
     /* Margin Blocks */
     --size-400: 1rem;
     --size-500: 1.5rem;
     --size-600: 2rem;
+
+    --fw-regular: 500;
+    --fw-bold: 700;
+    --fw-black: 800;
   }
 
 /* Css Reset Andy Bell */
@@ -109,6 +113,97 @@ select {
   }
 }
 
+/* Utility Classes */
+.container{
+  max-width: 900px;
+  margin-inline: auto;
+}
+.even-columns{
+  display: grid;
+}
+@media(min-width: 47em){
+  .even-columns{
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
+
+
+/* Font Classes */
+  
+fs-extra-small{
+  font-size: var(--fs-extra-small);
+  }
+  .fs-small{
+    font-size: var(--fs-small);
+  }
+  .fs-medium{
+    font-size: var(--fs-medium);
+  }
+  .fs-body{
+    font-size: var(--fs-body);
+  }
+  .fs-large{
+     font-size: var(--fs-large);
+  }
+  .fs-extra-large{
+    font-size: var(--fs-extra-large);
+  }
+  .fs-heading{
+    font-size: var(--fs-heading);
+  }
+
+  .fw-regular{
+    font-weight: var(--fw-regular);
+  }
+  .fw-bold{
+    font-weight: var(--fw-bold);
+  }
+  .fw-black{
+    font-weight: var(--fw-black);
+  }
+
+/* Colour Utility */
+  .text-primary-red{
+    color: var(--clr-primary-red);
+  }
+  .text-primary-orange{
+    color: var(--clr-primary-orange);
+  }
+  .text-primary-teal{
+    color: var(--clr-primary-teal);
+  }
+  .text-primary-blue{
+    color: var(--clr-primary-blue);
+  }
+  .text-neutral-white{
+    color: var(--clr-neutral-white);
+  }
+  .text-neutral-pale{
+    color: var(--clr-neutral-pale);
+  }
+  .text-neutral-lavender{
+    color: var(--clr-neutral-lavender);
+  }
+  .text-neutral-dark-gray{
+    color: var(--clr-neutral-dark-gray);
+  }
+
+  .text-center{
+    text-align: center;
+  }
+
+  .padding-500{
+    padding: var(--size-500);
+  }
+
+  .bg-gradient{
+    background: linear-gradient(var(--clr-gradient-slate-blue), var(--clr-gradient-royal-blue));
+  }
+  .bg-red{
+    border: 1px solid red;
+  }
+  
 /* Own CSS */
 
 body{
