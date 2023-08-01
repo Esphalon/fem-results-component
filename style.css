@@ -5,10 +5,10 @@
     --clr-primary-teal: hsl(166, 100%, 37%);
     --clr-primary-blue: hsl(234, 85%, 45%);
   
-    --bg-primary-red: hsla(0, 100%, 67%, .2);
-    --bg-primary-orange:hsla(39, 100%, 56%, .2);
-    --bg-primary-teal: hsla(166, 100%, 37%, .2);
-    --bg-primary-blue: hsla(234, 85%, 45%, .2);
+    --bg-primary-red: hsla(0, 100%, 67%, .1);
+    --bg-primary-orange:hsla(39, 100%, 56%, .1);
+    --bg-primary-teal: hsla(166, 100%, 37%, .1);
+    --bg-primary-blue: hsla(234, 85%, 45%, .1);
   
     --clr-neutral-white: hsl(0, 0%, 100%);
     --clr-neutral-pale: hsl(221, 100%, 96%);
